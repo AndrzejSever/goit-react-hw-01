@@ -1,10 +1,13 @@
-import"../FriendList/FriendList.css"
+import css from "./FriendList.module.css";
+import clsx from "clsx";
 export default function FriendListItem({ friends: { avatar, name, isOnline } }) {
  return (
-  <div>
+  <>
    <img src={avatar} alt="Avatar" width="48" />
    <p>{name}</p>
-   <p>{isOnline === true ? "Online" : "Offline"}</p>
-  </div>
+         <p className={clsx(css.status, isOnline ? css.isActive : css.isRetired)}>
+             {isOnline ? "Online" : "Offline"}
+         </p>
+  </>
  );
 }

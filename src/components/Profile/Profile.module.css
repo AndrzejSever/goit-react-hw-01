@@ -1,4 +1,49 @@
-.Username {
-    font-size: 36px;
+.container {
+ display: flex;
+ flex-direction: column;
+ font-size: 36px;
+ font-family: sans-serif;
+ border: 2px solid black;
+ border-radius: 2%;
 }
 
+.box {
+ text-align: center;
+ padding: 40px;
+ img {
+  background-color: black;
+  border-radius: 50%;
+ }
+}
+
+.username {
+ font-weight: 700;
+}
+
+.user_desc {
+ color: rgba(114, 114, 114, 0.5);
+}
+
+.stats {
+ display: flex;
+ height: 150px;
+ overflow: hidden;
+}
+
+.stats_value {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 33.3%;
+ text-align: center;
+ gap: 10px;
+ background-color: rgba(114, 114, 114, 0.5);
+ border-top: 3px solid rgb(90, 90, 90, 0.5);
+}
+.stats_value:not(:last-child) {
+ border-right: 3px solid rgb(90, 90, 90, 0.5);
+}
+
+.stats_data {
+ font-weight: 700;
+}

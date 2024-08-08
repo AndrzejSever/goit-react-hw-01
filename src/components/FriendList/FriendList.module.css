@@ -1,0 +1,31 @@
+.container {
+ font-weight: 500;
+ margin: 40px 0;
+ display: flex;
+ gap: 15px;
+}
+
+.box {
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ padding: 15px;
+ border: 2px solid black;
+ border-radius: 5%;
+ img {
+  margin-bottom: 8px;
+ }
+}
+
+.status {
+ margin-top: 5px;
+ font-size: 12px;
+}
+
+.isActive{
+    color:greenyellow
+}
+
+.isRetired{
+    color: crimson;
+}
